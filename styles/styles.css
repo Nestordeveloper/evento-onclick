@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Barra de navegación */
+
+.nav-container {
+    max-height: 100px;
+    background-color: #cccccc;
+    padding: 1%;
+    margin: 0 10%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+#searchbar {
+    height: 30px;
+    width: 45%;
+}
+
+/* Regla de contenido */
+.main-container {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+.word {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 0 3% 0 3%;
+}
+
+/* Contenido columna 1*/
+.column-1 {
+    width: 60%;
+    margin: 2% 0 0 10%;
+}
+.sub-column {
+    padding: 5%;
+}
+.category {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.sub-column-2 {
+    display: flex;
+}
+
+h1>.title-1 {
+    font-weight: bold;
+}
+p>.category {
+    display: flex;
+}
+.underline {
+    text-decoration: underline;
+    color: #2b78e4;
+}
+/* Contenido columna 2*/
+.column-2 {
+    width: 30%;
+    margin: 2% 10% 0 0 ;
+}
+.dojonary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 3%;
+}
+/* Filas */
+.rows {
+    display: grid;
+}
+.row-1 {
+    grid-row: 1;
+}
+.row-2 {
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+/* Botones */
+.nav>.login {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #2b78e4;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #ffd966;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    font-weight: bold;
+    width: 90%;
+    margin-top: 20px;
+    padding: 2%;
+}
+.add {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #93c47d;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    width: 95%;
+    padding: 2%;
+}

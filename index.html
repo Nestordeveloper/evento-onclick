@@ -3,26 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/index.js"></script>
     <title>Evento Onclick</title>
 </head>
 <body>
-    <div>
-        <h1>Dojonary</h1>
-        <input type="text" name="search" id="searchbar" placeholder="Search">
-        <button class="login">Login</button>
+    <div class="nav-container">
+        <div class="nav">
+            <h1>Dojonary</h1>
+            <input type="text" name="search" id="searchbar" placeholder="Search">
+            <button onclick="log(this)" class="login">Login</button>
+        </div>
     </div>
-    <div>
+    <div class="main-container">
         <div class="column-1">
-            <div class="definition">
-    
+            <div class="word">
+                <div class="sub-column">
+                    <h1 class="title-1">Ninja</h1>
+                    <p class="category">noun</p>
+                    <p>Plural: <i>ninjas</i></p>
+                    <button onclick="like(1)" class="like"><p id="likeCount-1"></p>&nbsp;Like&nbsp;</button>
+                </div>
+                <div class="sub-column-2">
+                    <p class="definition">A practitioner skilled in the <span class="underline">Japanese</span> art of <span class="underline">ninjutsu</span></p>
+                </div>
             </div>
-            <div class="definition">
-
+            <div class="word">
+                <div class="sub-column">
+                    <h1 class="title-1">Ninja</h1>
+                    <p class="category">noun</p>
+                    <p>Plural: <i>ninjas</i></p>
+                    <button onclick="like(2)" class="like"><p id="likeCount-2"></p>&nbsp;Like&nbsp;</button>
+                </div>
+                <div class="sub-column-2">
+                    <p class="definition">A <span class="underline">Programmer</span> who breaks down problems with <span class="underline">Zen</span>-like focus</p>
+                </div>
             </div>
         </div>
+
         <div class="column-2">
-            <div class="add-definition">
-                
+            <div class="dojonary">
+                <div class="rows">
+                    <div class="row-1">
+                        <h2>Dojonary is defined by <em>YOU</em></h1>
+                    </div>
+                    <div class="row-2">
+                        <button onclick="addDefinition(this)" class="add">Add Definition</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
